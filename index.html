@@ -140,18 +140,14 @@
     </nav>
 
     <script>
-        var star = document.querySelectorAll(".fa-star");
+        var stars = document.querySelectorAll(".fa-star");
 
-        star.forEach(element => {
+        stars.forEach(element => {
             element.addEventListener("click", (event) => {
 
-                if(event.target.classList[1] == 'far'){
-                    event.target.classList.remove('far')
-                    event.target.classList.add('fas')
-                } else {
-                    event.target.classList.add('far')
-                    event.target.classList.remove('fas')
-                }
+                event.target.classList.toggle('far');
+                event.target.classList.toggle('fas');
+
             });
         });
     </script>
