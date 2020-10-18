@@ -66,6 +66,11 @@ header {
 
 }
 
+.user-container .member-name a{
+    color: white;
+    text-decoration: none;
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -76,14 +81,21 @@ header {
     font-weight: 500;
     margin-bottom: 25px;
     font-size: 18px;
+    
 }
 
 .menu li {
     cursor: pointer;
+    border: none;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid #000000;
 }
 
 .menu .selected {
     color:#0152cc;
+    border-bottom: 2px solid #0152cc;
 }
 
 main {
@@ -208,20 +220,23 @@ main {
 }
 
 .pages-navigation span {
-    display:  inline-block;
     color: #0152cc;
     font-weight: 500;
     font-size: 18px;
-    cursor: pointer;
-}
-
-.pages-navigation span:nth-child(1) {
-    background-color: #0152cc;
+    cursor: pointer; 
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.pages-navigation span:hover {
+    border: 1px solid #0152cc;
+}
+
+.pages-navigation span:nth-child(1) {
+    color: white;
+    background-color: #0152cc;
 }
