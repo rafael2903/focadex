@@ -1,2 +1,2 @@
-# focadex
+# Focadex
 HTML/CSS Cjr task
